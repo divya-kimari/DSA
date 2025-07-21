@@ -25,7 +25,6 @@ class Solution {
                 left++;
             }
         }
-
         return new int[]{}; // No match found
     }
 }
