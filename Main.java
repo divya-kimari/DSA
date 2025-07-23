@@ -1,4 +1,4 @@
-import java.util.Arrays;
+import java.util.*;
 
 class Solution {
     public int[] twoSum(int[] nums, int target) {
@@ -60,4 +60,7 @@ public class Main {
         sc.close();
     }
 }
+<<<<<<< HEAD:TwoSum.java
 
+=======
+>>>>>>> branch:Main.java
