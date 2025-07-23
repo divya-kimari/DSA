@@ -1,4 +1,4 @@
-import java.util.Arrays;
+import java.util.*;
 
 class Solution {
     public int[] twoSum(int[] nums, int target) {
@@ -29,3 +29,34 @@ class Solution {
     }
 }
 
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        // Input array
+        System.out.println("Enter array elements (space-separated):");
+        String[] input = sc.nextLine().split(" ");
+        int[] nums = new int[input.length];
+        for (int i = 0; i < input.length; i++) {
+            nums[i] = Integer.parseInt(input[i]);
+        }
+
+        // Input target
+        System.out.print("Enter target: ");
+        int target = sc.nextInt();
+
+        // Call twoSum
+        Solution solution = new Solution();
+        int[] result = solution.twoSum(nums, target);
+
+        // Output result
+        if (result.length == 2) {
+            System.out.println("Indices: " + result[0] + ", " + result[1]);
+        } else {
+            System.out.println("No pair found.");
+        }
+
+        sc.close();
+    }
+}
